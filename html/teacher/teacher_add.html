@@ -24,19 +24,19 @@
         <div class="navs">
             <ul class="list-unstyled">
                 <li>
-                    <a href="../index.html">
+                    <a href="../../index.html">
                         <i class="fa fa-home"></i>
                         仪表盘
                     </a>
                 </li>
                 <li>
-                    <a href="../user_list.html">
+                    <a href="../user/user_list.html">
                         <i class="fa fa-bell"></i>
                         用户管理
                     </a>
                 </li>
                 <li>
-                    <a href="../teacher_list.html">
+                    <a href="teacher_list.html" class="active">
                         <i class="fa fa-bell"></i>
                         讲师管理
                     </a>
@@ -47,31 +47,31 @@
                         课程管理
                         <i class="arrow fa fa-angle-right"></i>
                     </a>
-                    <ul class="list-unstyled" style="display: block;">
+                    <ul class="list-unstyled">
                         <li>
-                            <a href="./course_add.html">
+                            <a href="../course/course_add.html">
                                  课程添加
                             </a>
                         </li>
                         <li>
-                            <a href="course_list.html">
+                            <a href="../course/course_list.html">
                                 课程列表
                             </a>
                         </li>
                         <li>
-                            <a href="./course_category.html" class="active">
+                            <a href="../course/course_category.html">
                                 课程分类
                             </a>
                         </li>
                         <li>
-                            <a href="course_topic.html">
+                            <a href="../course/course_topic.html">
                                 课程专题
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="./advert_list.html">
+                    <a href="../advert_list.html">
                         <i class="fa fa-bell"></i>
                         广告管理
                     </a>
@@ -117,7 +117,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="../settings.html">
+                            <a href="../home/settings.html">
                                 <i class="fa fa-user"></i>
                                 个人中心
                             </a>
@@ -136,53 +136,55 @@
                     </ul>
                 </nav>          
             </div>
-            <div class="body course-category">
+            <div class="body teacher">
                 <!-- 面包屑 -->
                 <ol class="breadcrumb">
-                    <li><a href="javascript:;">课程管理</a></li>
-                    <li class="active">课程分类</li>
+                    <li><a href="javascript:;">讲师管理</a></li>
+                    <li class="active">讲师添加</li>
                 </ol>
-                <div class="category-add">
-                    <form action="" class="form-horizontal">
+                <div class="teacher-add">
+                    <form action="" class="form-horizontal col-xs-offset-2">
                         <div class="form-group">
-                            <label for="" class="col-xs-4 control-label">名称</label>
-                            <div class="col-xs-3">
-                                <input type="text" class="form-control input-sm" placeholder="填写分类名称">
+                            <label for="" class="col-xs-3 control-label">姓名</label>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control input-sm" placeholder="讲师名称">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-xs-4 control-label">级别</label>
+                            <label for="" class="col-xs-3 control-label">密码</label>
+                            <div class="col-xs-4">
+                                <input type="password" class="form-control input-sm">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-3 control-label">入职时间</label>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control input-sm">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-xs-3 control-label">类型</label>
                             <div class="col-xs-2">
                                 <select name="" class="form-control input-sm">
-                                    <option value="">顶级分类</option>
-                                    <option value="">前端开发</option>
-                                    <option value="">后端开发</option>
-                                    <option value="">数据库</option>
-                                    <option value="">云计算&大数据</option>
-                                    <option value="">视觉设计</option>
+                                    <option value="">讲师</option>
+                                    <option value="">管理员</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-xs-4 control-label">排序</label>
-                            <div class="col-xs-1">
-                                <input type="text" class="form-control input-sm" value="10">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-xs-4 control-label">是否显示</label>
-                            <div class="col-xs-3">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" checked> 是
+                            <label for="" class="col-xs-3 control-label">性别</label>
+                            <div class="col-xs-4">
+                                <label class="radio-inline">
+                                    <input type="radio" checked> 男
                                 </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox"> 否
+                                <label class="radio-inline">
+                                    <input type="radio"> 女
                                 </label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-xs-8">
-                                <a href="./course_category.html" class="btn btn-success btn-sm pull-right">保存</a>
+                            <div class="col-xs-7">
+                                <a href="../advert_list.html" class="btn btn-success btn-sm pull-right"> 添 加 </a>
                             </div>                          
                         </div>
                     </form>

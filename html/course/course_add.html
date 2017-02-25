@@ -24,19 +24,19 @@
         <div class="navs">
             <ul class="list-unstyled">
                 <li>
-                    <a href="../index.html">
+                    <a href="../../index.html">
                         <i class="fa fa-home"></i>
                         仪表盘
                     </a>
                 </li>
                 <li>
-                    <a href="../user_list.html">
+                    <a href="../user/user_list.html">
                         <i class="fa fa-bell"></i>
                         用户管理
                     </a>
                 </li>
                 <li>
-                    <a href="../teacher_list.html">
+                    <a href="../teacher/teacher_list.html">
                         <i class="fa fa-bell"></i>
                         讲师管理
                     </a>
@@ -71,7 +71,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="./advert_list.html">
+                    <a href="../advert_list.html">
                         <i class="fa fa-bell"></i>
                         广告管理
                     </a>
@@ -117,7 +117,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="../settings.html">
+                            <a href="../home/settings.html">
                                 <i class="fa fa-user"></i>
                                 个人中心
                             </a>
@@ -142,92 +142,24 @@
                     <li><a href="javascript:;">课程管理</a></li>
                     <li class="active">课程添加</li>
                 </ol>
-                <div class="steps">
-                    <!-- 摘要 -->
-                    <div class="brief">
-                        <div class="thumb">
-                            <img src="./uploads/course.png" alt="">
-                        </div>
-                        <dl class="info">
-                            <dt>Git 指南</dt>
-                            <dd>讲师：李鹏周</dd>
-                            <dd>课时：32</dd>
-                        </dl>
+                <div class="steps create">
+                    <div class="title">
+                        <h5>创建课程 <small>CREATE A COURSE</small></h5>
                     </div>
-                    <!-- 步聚 -->
-                    <ul class="forwards list-unstyled">
-                        <li>
-                            <a href="./course_add_step1.html" class="active">
-                            <b>1</b>
-                            基本信息
-                            </a>
-                        </li>
-                        <li>
-                            <a href="course_add_step2.html">
-                            <b>2</b>
-                            课程图片
-                            </a>
-                        </li>
-                        <li>
-                            <a href="course_add_step3.html">
-                            <b>3</b>
-                            课时管理
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- 基本信息 -->
-                    <div class="content">
-                        <!-- 标题 -->
-                        <div class="title">
-                            <h5>基本信息 <small>BASIC INFORMATION</small></h5>
+                    <form action="" class="form-horizontal col-xs-7">
+                        <div class="form-group">
+                            <label for="" class="col-xs-2 control-label">课程标题</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control input-sm" placeholder="请填写课程标题">
+                            </div>
                         </div>
-                        <form action="" class="basic form-horizontal">
-                            <div class="form-group">
-                                <label for="" class="col-xs-2 control-label">标题</label>
-                                <div class="col-xs-8">
-                                    <input type="text" class="form-control input-sm" value="Git指南">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-xs-2 control-label">课程描述</label>
-                                <div class="col-xs-8 ckeditor">
-                                    <textarea name="" rows="15" class="form-control input-sm"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-xs-2 control-label">讲师</label>
-                                <div class="col-xs-8">
-                                    <select name="" class="form-control input-sm">
-                                        <option value="">李鹏周</option>
-                                        <option value="">汪磊</option>
-                                        <option value="">蒋坤</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-xs-2 control-label">分类</label>
-                                <div class="col-xs-8">
-                                    <select name="" class="form-control input-sm">
-                                        <option value="">互联网</option>
-                                    </select>
-                                    <select name="" class="form-control input-sm">
-                                        <option value="">网页设计</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="col-xs-2 control-label">标签</label>
-                                <div class="col-xs-8">
-                                    <input type="text" class="form-control input-sm">
-                                    <p class="help-block">将会应用于按标签搜索课程、相关课程的提取等</p>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-xs-10">
-                                    <a href="course_add_step2.html" class="btn btn-success btn-sm pull-right">保 存</a>
-                                </div>                          
-                            </div>
-                        </form>
+                        <div class="col-xs-11">
+                            <a href="course_add_step1.html" class="btn btn-success btn-sm pull-right">创建课程</a>
+                        </div>
+                    </form>
+                    <div class="extra col-xs-3">
+                        <h5>从视频专辑导入课程</h5>
+                        <p>已支持优酷、腾讯视频、网易公开课、爱奇艺教育的视频专辑导入。</p>
                     </div>
                 </div>
             </div>
