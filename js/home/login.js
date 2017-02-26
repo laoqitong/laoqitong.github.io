@@ -5,14 +5,16 @@ define(['jquery'], function ($) {
     * 3.事件回调中通过ajax的方式提交表单数据
     * 4.如果返回的结果中的code为200，证明登陆成功，跳转到首页
     * */
-    $('#form-login').on('submit', function () {
-
+    $('#form_login').on('submit', function () {
+        console.log($(this).serialize());
         $.ajax({
             url:'/v6/login',
             type:'post',
             data:$(this).serialize(),
-            success: function () {
-                window.location.href = '/';
+            success: function (data) {
+                if(data.code == 200){
+                    location.href = '/';
+                }
             },
             error: function () {
                 console.log('失败咯');

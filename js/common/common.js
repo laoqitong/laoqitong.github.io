@@ -7,10 +7,10 @@ define(['jquery'], function ($) {
 
 
     // 退出功能
-    $('#login').on('click', function () {
+    $('#loginout').on('click', function () {
         $.post('/v6/logout', function (data) {
-            if(data.code ===200){
-                location.href = 'www.boxuegu.com/html/home/login.html';
+            if (data.code == 200) {
+                location.href = '/html/home/login.html';
             }
         })
     })
