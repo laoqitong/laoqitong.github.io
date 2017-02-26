@@ -6,18 +6,12 @@ define(['jquery'], function ($) {
     });
 
 
-    $.ajax({
-        url: '/v6/login',
-        type: 'post',
-        data: {
-            tc_name: 11111,
-            tc_pwd: 1111,
-        },
-        success: function () {
-            console.log('ok!');
-        },
-        error: function () {
-            console.log('failed');
-        }
+    // 退出功能
+    $('#login').on('click', function () {
+        $.post('/v6/logout', function (data) {
+            if(data.code ===200){
+                location.href = 'www.boxuegu.com/html/home/login.html';
+            }
+        })
     })
 })
