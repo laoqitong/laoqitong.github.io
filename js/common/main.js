@@ -24,6 +24,9 @@ requirejs.config({
         /*js/user*/
         userList: 'js/user/list',
         userProfile: 'js/user/profile',
+
+        /*common*/
+        common:'js/common/common'
     },
 
     shim: {
@@ -33,7 +36,7 @@ requirejs.config({
     }
 })
 
-require(['bootstrap', 'jquery'])
+require(['bootstrap', 'jquery','common']);
 
 (function (window) {
 
@@ -66,7 +69,7 @@ require(['bootstrap', 'jquery'])
             require(['courseCategoryAdd']);
             break;
         case '/html/course/list.html':
-            require(['coursrList']);
+            require(['courseList']);
             break;
         case '/html/course/topic.html':
             require(['courseTopic']);
